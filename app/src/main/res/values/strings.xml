@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MadLevel4Task2</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="welcome">Welcome</string>
+    <string name="instruction">Instructions: select rock, paper or scissors to play</string>
+
+</resources>
