@@ -69,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="@id/ivComp"
         app:layout_constraintStart_toStartOf="@+id/ivComp"
         app:layout_constraintTop_toBottomOf="@id/ivComp"
-        android:text="Computer"
+        android:text="@string/comp"
         android:layout_marginTop="8dp"
         android:textStyle="bold"
         />
@@ -81,7 +81,7 @@
         app:layout_constraintEnd_toEndOf="@id/ivPlayer"
         app:layout_constraintStart_toStartOf="@+id/ivPlayer"
         app:layout_constraintTop_toBottomOf="@id/ivPlayer"
-        android:text="You"
+        android:text="@string/you"
         android:layout_marginTop="8dp"
         android:textStyle="bold"
         />
@@ -107,7 +107,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/ivComp"
-        android:text="VS"
+        android:text="@string/VS"
         />
 
     <ImageView

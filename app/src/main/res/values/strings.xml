@@ -4,5 +4,8 @@
     <!-- Strings used for fragments for navigation -->
     <string name="welcome">Welcome</string>
     <string name="instruction">Instructions: select rock, paper or scissors to play</string>
+    <string name="VS">V.S.</string>
+    <string name="you">You</string>
+    <string name="comp">Computer</string>
 
 </resources>

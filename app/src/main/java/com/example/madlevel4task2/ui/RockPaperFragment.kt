@@ -7,13 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import com.example.madlevel4task2.R
+import com.example.madlevel4task2.repository.RockPaperRepository
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 class RockPaperFragment : Fragment() {
 
-    private val result = arrayListOf("ROCK", "PAPER", "SCISSORS")
+    private lateinit var rockPaperRepositoy: RockPaperRepository
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,

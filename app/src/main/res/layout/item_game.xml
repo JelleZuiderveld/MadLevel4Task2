@@ -1,8 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvResultPast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvDatePast"/>
+
+    <TextView
+        android:id="@+id/tvDatePast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ivCompPast"/>
+
+    <ImageView
+        android:id="@+id/ivCompPast"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toTopOf="@id/tvCompPastText"
+        app:layout_constraintEnd_toStartOf="@id/tvVsPast"
+        />
+
+    <TextView
+        android:id="@+id/tvCompPastText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ivCompPast"
+        app:layout_constraintEnd_toEndOf="@id/ivCompPast"
+        />
+
+    <TextView
+        android:id="@+id/tvVsPast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/VS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivCompPast"
+        app:layout_constraintBottom_toBottomOf="@id/ivCompPast"
+        />
+
+    <ImageView
+        android:id="@+id/ivYouPast"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toTopOf="@id/tvYouPastText"
+        app:layout_constraintStart_toEndOf="@id/tvVsPast"
+        />
+
+    <TextView
+        android:id="@+id/tvYouPastText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/you"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ivYouPast"
+        app:layout_constraintEnd_toEndOf="@id/ivYouPast"
+        />
 
 
 
