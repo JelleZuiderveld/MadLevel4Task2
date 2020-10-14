@@ -10,7 +10,7 @@ import com.example.madlevel4task2.model.RockPaper
 class HistoryAdapter(private val rockPaper : List<RockPaper>) : RecyclerView.Adapter<HistoryAdapter.ViewHolder>(){
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
+        //fun databind
     }
 
 
