@@ -7,5 +7,8 @@
     <string name="VS">V.S.</string>
     <string name="you">You</string>
     <string name="comp">Computer</string>
+    <string name="loss">Computer Wins!</string>
+    <string name="draw">Draw</string>
+    <string name="win">You Win!</string>
 
 </resources>

@@ -10,14 +10,14 @@ import com.example.madlevel4task2.model.RockPaper
 interface RockPaperDao {
 
     @Query("SELECT * FROM rock_paper_table")
-    suspend fun getAllGames(): List<RockPaper>
+    suspend fun getAllMatches(): List<RockPaper>
 
     @Insert
-    suspend fun insertGame(rockPaper: RockPaper)
+    suspend fun insertMatch(rockPaper: RockPaper)
 
     @Delete
-    suspend fun deleteGame(rockPaper: RockPaper)
+    suspend fun deleteMatch(rockPaper: RockPaper)
 
     @Query("DELETE FROM rock_paper_table")
-    suspend fun deleteAllProducts()
+    suspend fun deleteAllMatches()
 }
