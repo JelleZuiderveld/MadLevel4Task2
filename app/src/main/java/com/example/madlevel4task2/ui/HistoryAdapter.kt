@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.madlevel4task2.R
 import com.example.madlevel4task2.model.RockPaper
+import kotlinx.android.synthetic.main.item_game.view.*
 
 class HistoryAdapter(private val rockPaper : List<RockPaper>) : RecyclerView.Adapter<HistoryAdapter.ViewHolder>(){
 
@@ -15,12 +16,16 @@ class HistoryAdapter(private val rockPaper : List<RockPaper>) : RecyclerView.Ada
         private val context: Context = itemView.context.applicationContext
         private val tvResultPast: TextView = itemView.findViewById(R.id.tvResultPast)
 
+
         fun databind(rockPaper: RockPaper){
             when(rockPaper.result){
                 RockPaper.Result.LOSS -> tvResultPast.text = context.getString(R.string.loss)
                 RockPaper.Result.DRAW -> tvResultPast.text = context.getString(R.string.draw)
                 RockPaper.Result.WIN -> tvResultPast.text = context.getString(R.string.win)
             }
+            itemView.tvDatePast.text = rockPaper.date.toString()
+            itemView.ivCompPast.setImageDrawable(itemView.context.applicationContext.getDrawable(rockPaper.compResult))
+            itemView.ivPlayerPast.setImageDrawable(itemView.context.applicationContext.getDrawable(rockPaper.playerResult))
         }
     }
 

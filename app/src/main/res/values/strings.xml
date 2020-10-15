@@ -10,5 +10,7 @@
     <string name="loss">Computer Wins!</string>
     <string name="draw">Draw</string>
     <string name="win">You Win!</string>
+    <string name="history">History</string>
+    <string name="deleteAll">Delete</string>
 
 </resources>
